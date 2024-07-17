@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playwrite CU", cursive, sans-serif;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    min-height: 500px;
+    width: 50%;
+    background-color: #fdf0d5;
+    border-radius: 25px;
+    padding: 15px;
+}
+
+.main h1 {
+    text-align: center;
+}
+
+.main input {
+    width: 100%;
+    padding: 7px;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    font-size: 15px;
+    color: #0d1b2a;
+}
+
+.tasks {
+    padding: 10px 0;
+    list-style: none;
+}
+
+.tasks li {
+    background-color: #eae2b7;
+    font-size: 13px;
+    padding: 5px;
+    text-align: justify;
+    position: relative;
+    margin-top: 5px;
+    border-radius: 10px;
+    user-select: none;
+}
+
+.tasks li i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.tasks li img {
+    height: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.tasks li.completed {
+    text-decoration: line-through;
+
+}
+
+@media only screen and (max-width:600px) {
+    body {
+        display: block;
+    }
+
+    .main {
+        width: 80%;
+        align-items: flex-start;
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+
+    .main {
+        font-size: 20px;
+    }
+
+    .main h1 {
+        font-size: 30px;
+    }
+
+
+
+}
